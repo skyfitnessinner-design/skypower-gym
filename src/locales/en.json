@@ -1,0 +1,117 @@
+{
+  "header": {
+    "nav": {
+      "about": "About",
+      "zones": "Zones",
+      "gallery": "Gallery",
+      "pricing": "Pricing"
+    },
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode"
+  },
+  "hero": {
+    "subtitle": "Training to the Next Level",
+    "title": "Achieve Your Fitness Goals",
+    "cta": "Get Started"
+  },
+  "about": {
+    "label": "About Us",
+    "title": "More Than Just",
+    "highlight": "Fitness",
+    "description1": "SkyPower Fitness Centre is a modern sports complex in Varna, designed for people who value their training. It offers a wide variety of fitness equipment, cardio machines, strength training zone, group classes and spacious free weights area.",
+    "description2": "The equipment is suitable for beginners, advanced users, strength sports, functional training and competition preparation. The hall is lit with natural light, features large windows and a quality audio system."
+  },
+  "zones": {
+    "title": "Our Zones",
+    "subtitle": "Everything you need to achieve maximum results.",
+    "zones": [
+      {
+        "id": "free-weights",
+        "title": "Free Weights",
+        "desc": "Wide variety of dumbbells and free weights, ideal for isolation and basic strength exercises."
+      },
+      {
+        "id": "cardio",
+        "title": "Cardio Zone",
+        "desc": "High-class treadmills, cross trainers and ergometers for full cardio training and endurance."
+      },
+      {
+        "id": "plate-loaded",
+        "title": "Plate Loaded",
+        "desc": "Specialized machines with free weights for maximum muscle control and safety."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Our Pricing",
+    "subtitle": "Find the perfect plan for you",
+    "plans": [
+      {
+        "name": "Day Pass",
+        "price": "5",
+        "currency": "BGN",
+        "period": "per day",
+        "description": "Full access for one day",
+        "color": "from-purple-600 to-pink-600"
+      },
+      {
+        "name": "Student",
+        "price": "29",
+        "currency": "BGN",
+        "period": "monthly",
+        "description": "With valid student ID",
+        "color": "from-blue-600 to-cyan-600"
+      },
+      {
+        "name": "Women",
+        "price": "35",
+        "currency": "BGN",
+        "period": "monthly",
+        "description": "Special plan for women",
+        "color": "from-pink-600 to-rose-600"
+      },
+      {
+        "name": "Men",
+        "price": "40",
+        "currency": "BGN",
+        "period": "monthly",
+        "description": "Optimized for men's training",
+        "color": "from-blue-600 to-indigo-600"
+      },
+      {
+        "name": "Unlimited",
+        "price": "45",
+        "currency": "BGN",
+        "period": "monthly",
+        "description": "Full 24/7 access",
+        "color": "from-amber-600 to-orange-600"
+      }
+    ],
+    "includes": "Includes:"
+  },
+  "contact": {
+    "address": "TRC \"YAVOR\", Mladost 1, fl. 3",
+    "city": "Varna, 9020 Bulgaria",
+    "phone": "+359 899 448 300",
+    "email": "info@skypower.bg",
+    "workingHours": "Working Hours",
+    "hours": [
+      {
+        "day": "Monday - Friday",
+        "time": "06:30 - 21:30"
+      },
+      {
+        "day": "Saturday",
+        "time": "08:00 - 20:00"
+      },
+      {
+        "day": "Sunday",
+        "time": "Closed"
+      }
+    ],
+    "copyright": "© {{year}} SkyPower Fitness Centre. All rights reserved."
+  },
+  "gallery": {
+    "title": "Our Fitness Center"
+  }
+}
