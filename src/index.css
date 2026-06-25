@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,4 +8,24 @@
   html {
     scroll-behavior: smooth;
   }
+}
+
+.gallery-swiper-container .swiper-button-next,
+.gallery-swiper-container .swiper-button-prev {
+  color: #2563eb; /* Твоето синьо (text-blue-600) */
+}
+
+@media (prefers-color-scheme: dark) {
+  .gallery-swiper-container .swiper-button-next,
+  .gallery-swiper-container .swiper-button-prev {
+    color: #22d3ee; /* Твоят циан (text-cyan-400) */
+  }
+}
+
+.gallery-swiper-container .swiper-pagination-bullet-active {
+  background: #2563eb !important;
+}
+
+.dark .gallery-swiper-container .swiper-pagination-bullet-active {
+  background: #22d3ee !important;
 }

@@ -8,8 +8,8 @@ import Footer from "./components/layout/Footer";
 import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
 import Zones from "./components/sections/Zones";
-import Gallery from "./components/sections/Gallery";
 import Pricing from "./components/sections/Pricing";
+import GallerySlider from "./components/sections/GallerySlider";
 
 export default function App() {
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function App() {
           <Hero />
           <About />
           <Zones />
-          <Gallery />
+          <GallerySlider />
           <Pricing />
         </main>
         <Footer />

@@ -43,51 +43,49 @@
     ]
   },
   "pricing": {
-    "title": "Наши Цени",
-    "subtitle": "Намери перфектния план за теб",
+    "title": "Месечни",
+    "subtitle": "Цени",
+    "membership": "Карти",
     "plans": [
       {
-        "name": "Дневен Пропуск",
-        "price": "5",
-        "currency": "BGN",
-        "period": "за ден",
-        "description": "Пълен достъп за един ден",
-        "color": "from-purple-600 to-pink-600"
+        "id": "single",
+        "name": "Единична тренировка",
+        "period": "1 посещение"
       },
-      {
-        "name": "Студент",
-        "price": "29",
-        "currency": "BGN",
-        "period": "месечно",
-        "description": "С валидно студентско удостоверение",
-        "color": "from-blue-600 to-cyan-600"
-      },
-      {
-        "name": "За Жени",
-        "price": "35",
-        "currency": "BGN",
-        "period": "месечно",
-        "description": "Специален план за жени",
-        "color": "from-pink-600 to-rose-600"
-      },
-      {
-        "name": "За Мъже",
-        "price": "40",
-        "currency": "BGN",
-        "period": "месечно",
-        "description": "Оптимизиран за мъжки тренировки",
-        "color": "from-blue-600 to-indigo-600"
-      },
-      {
-        "name": "Неограничен",
-        "price": "45",
-        "currency": "BGN",
-        "period": "месечно",
-        "description": "Пълен достъп 24/7",
-        "color": "from-amber-600 to-orange-600"
-      }
+      { "id": "card8", "name": "Карта 8 посещения", "period": "1 месец" },
+      { "id": "card12", "name": "Карта 12 посещения", "period": "1 месец" },
+      { "id": "card16", "name": "Карта 16 посещения", "period": "1 месец" },
+      { "id": "unlimited", "name": "Неограничена карта", "period": "1 месец" }
     ],
-    "includes": "Включва:"
+    "studentTitle": "Ученически карти (до 17:00 ч.)",
+    "studentPlans": [
+      { "id": "student12", "name": "Карта 12 посещения" },
+      { "id": "student16", "name": "Карта 16 посещения" },
+      { "id": "studentUnlimited", "name": "Неограничена карта" }
+    ],
+    "longTermTitle": "3 и 6-Месечни карти",
+    "longTermPlans": [
+      { "id": "3m1p", "name": "3 месеца (1 човек - неограничена)" },
+      { "id": "3m2p", "name": "3 месеца (2-ма души - неограничена)" },
+      { "id": "6m1p", "name": "6 месеца (1 човек - неограничена)" },
+      { "id": "6m2p", "name": "6 месеца (2-ма души - неограничена)" }
+    ],
+    "programsTitle": "Изготвяне на Програми и Режими",
+    "trainingTitle": "Тренировъчни програми",
+    "trainingPlans": [
+      { "id": "train23", "name": "Програма за 2 или 3 дни" },
+      { "id": "train4", "name": "Програма за 4 дни" },
+      { "id": "train5", "name": "Програма за 5 дни" }
+    ],
+    "nutritionTitle": "Хранителни режими",
+    "nutritionPlans": [
+      { "id": "nutr3", "name": "Хранителен режим за 3 дни" },
+      { "id": "nutr7", "name": "Хранителен режим за 7 дни" }
+    ],
+    "specialCard": "Карта за 20 посещения за двама (1 месец)",
+    "currency": "BGN.",
+    "instructorText": "🏋️‍♂️ Тренировка с инструктор: Единична с инструктор: 12 € | 23.47 лв. | Месечна + инструктор (към карти за 8/12 посещения): попитайте на рецепция.",
+    "multisportText": "✔️ MultiSport: Обектът работи с карти MultiSport. Важи за единично посещение."
   },
   "contact": {
     "address": "ТЦ \"ЯВОР\", ж.к. Младост 1, ет. 3",

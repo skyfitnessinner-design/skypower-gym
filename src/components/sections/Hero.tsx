@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="inline-block px-4 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-cyan-400 font-bold text-sm uppercase tracking-wider">
           ⚡ {t("hero.subtitle")}
         </div>
-        <h1 className="text-6xl lg:text-8xl font-black leading-[1.1] uppercase italic">
+        <h1 className="text-4xl lg:text-6xl font-black leading-[1.1] uppercase italic">
           {t("hero.title")} <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">
             {t("hero.cta")}

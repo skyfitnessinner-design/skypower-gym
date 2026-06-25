@@ -43,51 +43,45 @@
     ]
   },
   "pricing": {
-    "title": "Our Pricing",
-    "subtitle": "Find the perfect plan for you",
+    "title": "Monthly",
+    "subtitle": "Pricing",
+    "membership": "Cards",
     "plans": [
-      {
-        "name": "Day Pass",
-        "price": "5",
-        "currency": "BGN",
-        "period": "per day",
-        "description": "Full access for one day",
-        "color": "from-purple-600 to-pink-600"
-      },
-      {
-        "name": "Student",
-        "price": "29",
-        "currency": "BGN",
-        "period": "monthly",
-        "description": "With valid student ID",
-        "color": "from-blue-600 to-cyan-600"
-      },
-      {
-        "name": "Women",
-        "price": "35",
-        "currency": "BGN",
-        "period": "monthly",
-        "description": "Special plan for women",
-        "color": "from-pink-600 to-rose-600"
-      },
-      {
-        "name": "Men",
-        "price": "40",
-        "currency": "BGN",
-        "period": "monthly",
-        "description": "Optimized for men's training",
-        "color": "from-blue-600 to-indigo-600"
-      },
-      {
-        "name": "Unlimited",
-        "price": "45",
-        "currency": "BGN",
-        "period": "monthly",
-        "description": "Full 24/7 access",
-        "color": "from-amber-600 to-orange-600"
-      }
+      { "id": "single", "name": "Single Workout", "period": "1 visit" },
+      { "id": "card8", "name": "8 Visits Card", "period": "1 month" },
+      { "id": "card12", "name": "12 Visits Card", "period": "1 month" },
+      { "id": "card16", "name": "16 Visits Card", "period": "1 month" },
+      { "id": "unlimited", "name": "Unlimited Card", "period": "1 month" }
     ],
-    "includes": "Includes:"
+    "studentTitle": "Student Cards (until 17:00)",
+    "studentPlans": [
+      { "id": "student12", "name": "12 Visits Card" },
+      { "id": "student16", "name": "16 Visits Card" },
+      { "id": "studentUnlimited", "name": "Unlimited Card" }
+    ],
+    "longTermTitle": "3 and 6-Month Cards",
+    "longTermPlans": [
+      { "id": "3m1p", "name": "3 months (1 person - unlimited)" },
+      { "id": "3m2p", "name": "3 months (2 people - unlimited)" },
+      { "id": "6m1p", "name": "6 months (1 person - unlimited)" },
+      { "id": "6m2p", "name": "6 months (2 people - unlimited)" }
+    ],
+    "programsTitle": "Nutrition & Training Programs",
+    "trainingTitle": "Training Programs",
+    "trainingPlans": [
+      { "id": "train23", "name": "Program for 2 or 3 days" },
+      { "id": "train4", "name": "Program for 4 days" },
+      { "id": "train5", "name": "Program for 5 days" }
+    ],
+    "nutritionTitle": "Nutrition Plans",
+    "nutritionPlans": [
+      { "id": "nutr3", "name": "Nutrition plan for 3 days" },
+      { "id": "nutr7", "name": "Nutrition plan for 7 days" }
+    ],
+    "specialCard": "20 Visits Card for two (1 month)",
+    "currency": "BGN.",
+    "instructorText": "🏋️‍♂️ Training with Instructor: Single session: 12 € | 23.47 BGN | Monthly + instructor (with 8/12 visits cards): ask at reception.",
+    "multisportText": "✔️ MultiSport: The facility accepts MultiSport cards. Valid for a single visit."
   },
   "contact": {
     "address": "TRC \"YAVOR\", Mladost 1, fl. 3",
