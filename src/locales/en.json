@@ -2,6 +2,7 @@
   "header": {
     "nav": {
       "about": "About",
+      "instructors": "Instructors",
       "zones": "Zones",
       "gallery": "Gallery",
       "pricing": "Pricing"
@@ -18,10 +19,10 @@
     "label": "About Us",
     "title": "More Than Just",
     "highlight": "Fitness",
-    "description1": "Fitness Sky Power opened its doors in 2009, simultaneously with the opening of Yavor Shopping Center. For more than 15 years, our gym has been a preferred destination for sports and an active lifestyle. Located on the third floor of the shopping center, the gym offers a comfortable training area combining modern equipment and a pleasant atmosphere.",
-    "description2": "One of the distinctive features of the hall is the impressive glass roof and large panoramic windows, which provide an abundance of natural light throughout the day and create a sense of spaciousness and freedom during your workout.",
-    "description3": "Our visitors have access to a modern cardio zone, a variety of free weights, and professional fitness machines. After your workout, you can take advantage of our well-stocked protein bar, offering a variety of drinks and nutritional supplements for faster recovery and better results.",
-    "description4": "For the convenience of all visitors, free parking is available in front of the Yavor Shopping Center, making access to the gym easy and convenient at any time. Our mission is to provide a quality training environment where everyone feels motivated to give their best."
+    "description1": "Fitness Sky Power opened its doors in 2009, simultaneously with the opening of Yavor Shopping Center. It is located on the third floor, offering a panoramic view that contributes to the wonderful atmosphere during workouts.",
+    "description2": "A distinctive feature of the gym is the glass roof and large windows, which provide natural light and a sense of spaciousness.",
+    "description3": "Our mission is to provide a quality training environment, modern equipment, and a comfortable atmosphere where everyone feels motivated to give their best.",
+    "description4": "For the convenience of visitors, Yavor Shopping Center offers free parking, ensuring easy and convenient access to the gym at all times."
   },
   "zones": {
     "title": "Our Zones",
@@ -86,6 +87,7 @@
     "multisportText": "✔️ MultiSport: The facility accepts MultiSport cards. Valid for a single visit."
   },
   "contact": {
+    "mapLink": "https://maps.app.goo.gl/1CGrXtPSjUmqxNv7A",
     "address": "TRC \"YAVOR\", Mladost 1, fl. 3",
     "city": "Varna, 9020 Bulgaria",
     "phone": "+359 899 448 300",
@@ -94,20 +96,35 @@
     "hours": [
       {
         "day": "Monday - Friday",
-        "time": "06:30 - 21:30"
+        "time": "8:00 - 21:30"
       },
       {
         "day": "Saturday",
-        "time": "08:00 - 20:00"
+        "time": "09:00 - 20:30"
       },
       {
         "day": "Sunday",
-        "time": "Closed"
+        "time": "09:00 - 20:30"
       }
     ],
     "copyright": "© {{year}} SkyPower Fitness Centre. All rights reserved."
   },
   "gallery": {
     "title": "Our Fitness Center"
+  },
+  "instructors": {
+    "label": "Our Instructors",
+    "title": "Professional Team",
+    "description": "Kremena and Petar Angelovi are the co-founders of the gym and people who believe that good results are achieved through professionalism, consistency, and a personal approach to every client.",
+    "kremena": {
+      "name": "Kremena Angelova",
+      "desc": "Certified fitness instructor with 7 years of experience, specializing in working with women. She takes an individual approach to each client according to their goals, physical preparation, and lifestyle.",
+      "phone": "Phone: 0888 496 604"
+    },
+    "petar": {
+      "name": "Petar Angelov",
+      "desc": "Certified fitness instructor and competitor with over 15 years of experience in the 'Men's Physique' category. He helps clients build strength, muscle mass, and proper training habits.",
+      "phone": "Phone: 0884 260 006"
+    }
   }
 }

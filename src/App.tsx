@@ -10,6 +10,7 @@ import About from "./components/sections/About";
 import Zones from "./components/sections/Zones";
 import Pricing from "./components/sections/Pricing";
 import GallerySlider from "./components/sections/GallerySlider";
+import Instructors from "./components/sections/Instructors";
 
 export default function App() {
   useEffect(() => {
@@ -24,6 +25,7 @@ export default function App() {
         <main>
           <Hero />
           <About />
+          <Instructors />
           <Zones />
           <GallerySlider />
           <Pricing />

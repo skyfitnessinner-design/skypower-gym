@@ -1,9 +1,13 @@
 import heroImg from "../assets/slider/IMG_0114.jpeg";
 import aboutImg from "../assets/slider/IMG_0102.jpeg";
 import gymImage1 from "../assets/slider/sdIunC.jpeg";
-import gymImage2 from "../assets/slider/IMG_0100.jpeg";
-import gymImage3 from "../assets/slider/IMG_0099.jpeg";
+import gymImage2 from "../assets/slider/Img_0095.jpeg";
+import gymImage3 from "../assets/slider/Img_0097.jpeg";
 import gymImage4 from "../assets/slider/IMG_0098.jpeg";
+import gymImage5 from "../assets/slider/IMG_0099.jpeg";
+import gymImage6 from "../assets/slider/IMG_0100.jpeg";
+import gymImage7 from "../assets/slider/IMG_0105.jpeg";
+import gymImage8 from "../assets/slider/IMG_0106.jpeg";
 
 // Pricing & Services
 export const PRICING_DATA = {
@@ -82,6 +86,34 @@ export const GALLERY_IMAGES = [
     colSpan: "",
     rowSpan: "",
   },
+  {
+    id: "gym-5",
+    src: gymImage5,
+    alt: "Gym Interior 5",
+    colSpan: "",
+    rowSpan: "",
+  },
+  {
+    id: "gym-6",
+    src: gymImage6,
+    alt: "Gym Interior 6",
+    colSpan: "",
+    rowSpan: "",
+  },
+  {
+    id: "gym-7",
+    src: gymImage7,
+    alt: "Gym Interior 7",
+    colSpan: "",
+    rowSpan: "",
+  },
+  {
+    id: "gym-8",
+    src: gymImage8,
+    alt: "Gym Interior 8",
+    colSpan: "",
+    rowSpan: "",
+  },
 ] as const;
 
 export const HERO_IMAGE = {
@@ -114,6 +146,7 @@ export const COMPANY_INFO = {
 // Navigation Links
 export const NAVIGATION_LINKS = [
   { href: "#about", label: "about" },
+  { href: "#instructors", label: "instructors" },
   { href: "#services", label: "zones" },
   { href: "#gallery", label: "gallery" },
   { href: "#pricing", label: "pricing" },

@@ -1,6 +1,7 @@
 ﻿import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { NAVIGATION_LINKS, STORAGE_KEYS } from "../../constants";
+import logoImg from "../../assets/logo.png";
 
 export default function Header() {
   const { t, i18n } = useTranslation();
@@ -46,13 +47,14 @@ export default function Header() {
   return (
     <header className="fixed w-full top-0 z-50 bg-white/70 dark:bg-slate-950/70 backdrop-blur-xl border-b border-slate-200/50 dark:border-slate-800/50 transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center relative z-50">
-        {/* Лого */}
-        <div className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 uppercase tracking-tighter italic">
-          Sky
-          <span className="text-slate-900 dark:text-white">Power</span>
+        <div className="flex items-center">
+          <img
+            src={logoImg}
+            alt="SkyPower Logo"
+            className="h-8 md:h-14 w-auto"
+          />
         </div>
 
-        {/* Десктоп навигация */}
         <nav className="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-wide text-slate-900 dark:text-white">
           {NAVIGATION_LINKS.map((link) => (
             <a
@@ -65,7 +67,6 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Бутони за действия */}
         <div className="flex items-center space-x-3 sm:space-x-4">
           <button
             onClick={toggleLanguage}
@@ -93,7 +94,6 @@ export default function Header() {
             </span>
           </button>
 
-          {/* Бургер бутон за мобилни устройства */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden w-10 h-10 flex items-center justify-center text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-cyan-400 transition focus:outline-none"
@@ -134,7 +134,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Овърлей за мобилното меню */}
       <div
         className={`fixed top-0 left-0 w-full h-screen z-40 
           bg-white/90 dark:bg-slate-950/90 backdrop-blur-lg
