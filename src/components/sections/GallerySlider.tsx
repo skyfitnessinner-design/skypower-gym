@@ -28,12 +28,16 @@ export default function GallerySlider() {
   };
 
   const pick = (id: string) => GALLERY_IMAGES.find((img) => img.id === id);
+  // Type for a single gallery image entry
+  type GalleryImage = (typeof GALLERY_IMAGES)[number];
+
+  // Pick images by id and filter out missing entries with a type guard
   const images = [
     pick("gym-2"),
     pick("gym-3"),
     pick("gym-4"),
     pick("gym-6"),
-  ].filter(Boolean) as typeof GALLERY_IMAGES;
+  ].filter((x): x is GalleryImage => Boolean(x));
 
   const largeImg = images[0] || GALLERY_IMAGES[0];
   const tallImg = images[1] || GALLERY_IMAGES[1];
