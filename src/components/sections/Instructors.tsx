@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { useEffect } from "react";
+// removed unused useEffect (debug only)
 import manImg from "../../assets/slider/man.jpeg";
 import womanImg from "../../assets/slider/woman.jpeg";
 
@@ -23,14 +23,7 @@ export default function Instructors() {
     },
   ];
 
-  // Debug: log which images are assigned (remove in production)
-  useEffect(() => {
-    // eslint-disable-next-line no-console
-    console.log("Instructors images:", {
-      kremena: team[0]?.img,
-      petar: team[1]?.img,
-    });
-  }, []);
+  // Debug removed: logging images in development was here
 
   return (
     <section
@@ -61,7 +54,6 @@ export default function Instructors() {
                 <img
                   src={member.img}
                   alt={member.name}
-                  title={String(member.img)}
                   className="instructors__img rounded-[2.5rem] shadow-2xl w-full h-[500px] object-cover"
                 />
               </div>
