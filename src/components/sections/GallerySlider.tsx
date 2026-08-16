@@ -56,10 +56,7 @@ export default function GallerySlider() {
             </span>
             {/* Заглавието е направено по-малко: text-3xl за мобилни, text-4xl за десктоп */}
             <h1 className="text-3xl md:text-4xl font-serif leading-tight">
-              {t("gallery.title", "Нашият фитнес център")}{" "}
-              <span className="text-white block mt-2">
-                {t("gallery.highlight", "Моменти")}
-              </span>
+              {t("gallery.title", "Нашият фитнес център")}
             </h1>
           </div>
 

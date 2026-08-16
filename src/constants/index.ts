@@ -109,8 +109,8 @@ export const GALLERY_IMAGES = [
     alt: "Gym Interior 6",
     colSpan: "",
     rowSpan: "",
-    caption_bg: "Кардио уреди",
-    caption_en: "Cardio machines",
+    caption_bg: "Рецепция и добавки",
+    caption_en: "Reception and supplements",
   },
   {
     id: "gym-7",
