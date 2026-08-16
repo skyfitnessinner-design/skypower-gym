@@ -29,3 +29,10 @@
 .dark .gallery-swiper-container .swiper-pagination-bullet-active {
   background: #22d3ee !important;
 }
+
+/* Ensure images show upper part (avoid cutting heads) */
+.gallery__image img,
+.instructors__img {
+  /* shift image slightly down so heads are not cropped */
+  object-position: 50% 12%;
+}

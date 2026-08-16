@@ -1,96 +1,155 @@
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  Autoplay,
-  EffectCoverflow,
-} from "swiper/modules";
 import { GALLERY_IMAGES } from "../../constants";
-
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/effect-coverflow";
-
-const doubleImages = [...GALLERY_IMAGES, ...GALLERY_IMAGES];
 
 export default function GallerySlider() {
   const { t } = useTranslation();
 
-  return (
-    <section
-      id="gallery"
-      className="py-24 bg-slate-50 dark:bg-slate-900 border-t border-b border-slate-100 dark:border-slate-800 transition-colors duration-500 overflow-hidden"
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Заглавие */}
-        <div className="text-center mb-16" data-aos="fade-up">
-          <div className="text-blue-600 dark:text-cyan-400 font-bold tracking-wider uppercase text-sm mb-3">
-            {t("gallery.label", "Галерия")}
-          </div>
-          <h2 className="text-4xl lg:text-5xl font-black uppercase italic">
-            {t("gallery.title", "Нашите")}{" "}
-            <span className="text-blue-600 dark:text-cyan-400">
-              {t("gallery.highlight", "Моменти")}
-            </span>
-          </h2>
-        </div>
+  const [isOpen, setIsOpen] = useState(false);
+  const [active, setActive] = useState<any>(null);
 
-        {/* Слайдър */}
-        <div
-          className="relative gallery-swiper-container"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          <Swiper
-            modules={[Navigation, Pagination, Autoplay, EffectCoverflow]}
-            effect="coverflow"
-            grabCursor={true}
-            centeredSlides={true}
-            loop={true}
-            autoplay={{ delay: 4000, disableOnInteraction: false }}
-            navigation
-            pagination={{ clickable: true }}
-            breakpoints={{
-              320: {
-                slidesPerView: 1.2,
-                spaceBetween: 10,
-              },
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-              },
-            }}
-            // Настройки на 3D ефекта
-            coverflowEffect={{
-              rotate: 25,
-              stretch: 0,
-              depth: 250,
-              modifier: 1,
-              slideShadows: true,
-            }}
-            className="pb-14 pt-4"
+  useEffect(() => {
+    if (!isOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [isOpen]);
+
+  const openImage = (img: any) => {
+    setActive(img);
+    setIsOpen(true);
+  };
+
+  const close = () => {
+    setIsOpen(false);
+    setActive(null);
+  };
+
+  const pick = (id: string) => GALLERY_IMAGES.find((img) => img.id === id);
+  const images = [
+    pick("gym-2"),
+    pick("gym-3"),
+    pick("gym-4"),
+    pick("gym-6"),
+  ].filter(Boolean) as typeof GALLERY_IMAGES;
+
+  const largeImg = images[0] || GALLERY_IMAGES[0];
+  const tallImg = images[1] || GALLERY_IMAGES[1];
+  const bottomLeftImg = images[2] || GALLERY_IMAGES[2];
+  const bottomRightImg = images[3] || GALLERY_IMAGES[3];
+
+  return (
+    <section id="gallery" className="py-16 md:py-24 bg-[#0d0d0d] text-white">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Грид Контейнер */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:auto-rows-[380px]">
+          {/* 1. Текстова част (Горе вляво) */}
+          <div className="flex flex-col justify-center p-4 lg:p-0">
+            <span className="text-[#c59d5f] uppercase tracking-widest text-sm font-semibold mb-4">
+              {t("gallery.label", "Галерия")}
+            </span>
+            {/* Заглавието е направено по-малко: text-3xl за мобилни, text-4xl за десктоп */}
+            <h1 className="text-3xl md:text-4xl font-serif leading-tight">
+              {t("gallery.title", "Нашият фитнес център")}{" "}
+              <span className="text-white block mt-2">
+                {t("gallery.highlight", "Моменти")}
+              </span>
+            </h1>
+          </div>
+
+          {/* 2. Горна Средна Снимка */}
+          <div
+            className="relative h-[300px] lg:h-full rounded-2xl overflow-hidden cursor-pointer group shadow-xl"
+            onClick={() => openImage(largeImg)}
           >
-            {doubleImages.map((image) => (
-              <SwiperSlide key={image.id} className="w-full max-w-[500px]">
-                <div className="overflow-hidden rounded-[2.5rem] shadow-xl border border-slate-200/50 dark:border-slate-800/50 bg-slate-100 dark:bg-slate-950">
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-[350px] md:h-[500px] object-cover transition-transform duration-500 hover:scale-105"
-                    loading="lazy"
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+            <img
+              src={largeImg.src}
+              alt={largeImg.alt}
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
+          </div>
+
+          {/* 3. Дълга Снимка (Вдясно - заема 2 реда на десктоп) */}
+          <div
+            className="relative h-[400px] lg:h-full rounded-2xl overflow-hidden cursor-pointer group shadow-xl lg:row-span-2"
+            onClick={() => openImage(tallImg)}
+          >
+            <img
+              src={tallImg.src}
+              alt={tallImg.alt}
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
+          </div>
+
+          {/* 4. Долна Лява Снимка */}
+          <div
+            className="relative h-[300px] lg:h-full rounded-2xl overflow-hidden cursor-pointer group shadow-xl"
+            onClick={() => openImage(bottomLeftImg)}
+          >
+            <img
+              src={bottomLeftImg.src}
+              alt={bottomLeftImg.alt}
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
+          </div>
+
+          {/* 5. Долна Средна Снимка */}
+          <div
+            className="relative h-[300px] lg:h-full rounded-2xl overflow-hidden cursor-pointer group shadow-xl"
+            onClick={() => openImage(bottomRightImg)}
+          >
+            <img
+              src={bottomRightImg.src}
+              alt={bottomRightImg.alt}
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
+          </div>
         </div>
       </div>
+
+      {/* Модал (Lightbox) */}
+      {isOpen && active && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
+          onClick={close}
+        >
+          <div
+            className="relative max-w-6xl w-full flex flex-col items-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={close}
+              aria-label="close"
+              className="absolute -top-12 right-0 text-white hover:text-[#c59d5f] transition-colors p-2 text-2xl"
+            >
+              ✕
+            </button>
+            <img
+              src={active.src}
+              alt={active.alt}
+              className="w-full h-auto max-h-[85vh] object-contain rounded-lg shadow-2xl"
+            />
+            <div className="mt-6 text-center text-white">
+              <div className="text-xl font-medium tracking-wide">
+                {(active as any).caption_bg}
+              </div>
+              <div className="text-sm text-gray-400 mt-2 uppercase tracking-widest">
+                {(active as any).caption_en}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

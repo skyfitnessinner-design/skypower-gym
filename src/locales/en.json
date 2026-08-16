@@ -40,8 +40,8 @@
       },
       {
         "id": "plate-loaded",
-        "title": "Plate Loaded",
-        "desc": "Specialized machines with free weights for maximum muscle control and safety."
+        "title": "Machines with Integrated Weights",
+        "desc": "Equipment with an integrated weight stack that allows quick and easy load changes. They provide controlled, smooth movement, excellent muscle isolation, and maximum safety during training."
       }
     ]
   },
@@ -83,7 +83,7 @@
     ],
     "specialCard": "20 Visits Card for two (1 month)",
     "currency": "BGN.",
-    "instructorText": "🏋️‍♂️ Training with Instructor: Single session: 12 € | 23.47 BGN | Monthly + instructor (with 8/12 visits cards): ask at reception.",
+    "instructorText": "🏋️‍♂️ Training with Instructor: Single session: 17 € | 33.25 BGN | Monthly + instructor (with 8/12 visits cards): ask at reception.",
     "multisportText": "✔️ MultiSport: The facility accepts MultiSport cards. Valid for a single visit."
   },
   "contact": {

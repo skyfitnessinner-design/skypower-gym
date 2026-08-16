@@ -1,4 +1,4 @@
-import heroImg from "../assets/slider/IMG_0114.jpeg";
+import heroImg from "../assets/slider/IMG_0096.jpeg";
 import aboutImg from "../assets/slider/IMG_0102.jpeg";
 import gymImage1 from "../assets/slider/sdIunC.jpeg";
 import gymImage2 from "../assets/slider/IMG_0095.jpeg";
@@ -60,10 +60,12 @@ export const ZONES = [
 export const GALLERY_IMAGES = [
   {
     id: "gym-1",
-    src: gymImage4,
+    src: gymImage1,
     alt: "Gym Interior 1",
     colSpan: "md:col-span-2",
     rowSpan: "md:row-span-2",
+    caption_bg: "Свободни тежести и щанги",
+    caption_en: "Free weights and barbells",
   },
   {
     id: "gym-2",
@@ -71,6 +73,8 @@ export const GALLERY_IMAGES = [
     alt: "Gym Interior 2",
     colSpan: "md:col-span-2",
     rowSpan: "",
+    caption_bg: "Кардио и кардио уреди",
+    caption_en: "Cardio area and machines",
   },
   {
     id: "gym-3",
@@ -78,13 +82,17 @@ export const GALLERY_IMAGES = [
     alt: "Gym Interior 3",
     colSpan: "",
     rowSpan: "",
+    caption_bg: "Машини за силови тренировки",
+    caption_en: "Strength training machines",
   },
   {
     id: "gym-4",
-    src: gymImage1,
+    src: gymImage4,
     alt: "Gym Interior 4",
     colSpan: "",
     rowSpan: "",
+    caption_bg: "Силови машини и тежести",
+    caption_en: "Strength machines and weights",
   },
   {
     id: "gym-5",
@@ -92,6 +100,8 @@ export const GALLERY_IMAGES = [
     alt: "Gym Interior 5",
     colSpan: "",
     rowSpan: "",
+    caption_bg: "Функционална зона",
+    caption_en: "Functional training area",
   },
   {
     id: "gym-6",
@@ -99,6 +109,8 @@ export const GALLERY_IMAGES = [
     alt: "Gym Interior 6",
     colSpan: "",
     rowSpan: "",
+    caption_bg: "Кардио уреди",
+    caption_en: "Cardio machines",
   },
   {
     id: "gym-7",

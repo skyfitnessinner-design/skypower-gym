@@ -1,4 +1,7 @@
 import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
+import manImg from "../../assets/slider/man.jpeg";
+import womanImg from "../../assets/slider/woman.jpeg";
 
 export default function Instructors() {
   const { t } = useTranslation();
@@ -8,17 +11,26 @@ export default function Instructors() {
       name: t("instructors.kremena.name"),
       desc: t("instructors.kremena.desc"),
       phone: t("instructors.kremena.phone"),
-      // Заместваме снимката с placeholder
-      img: "https://placehold.co/600x500/1e293b/ffffff?text=Kremena+Angelova",
+      // Use local `woman` image for Kremena
+      img: womanImg,
     },
     {
       name: t("instructors.petar.name"),
       desc: t("instructors.petar.desc"),
       phone: t("instructors.petar.phone"),
-      // Заместваме снимката с placeholder
-      img: "https://placehold.co/600x500/1e293b/ffffff?text=Petar+Angelov",
+      // Use local `man` image for Petar
+      img: manImg,
     },
   ];
+
+  // Debug: log which images are assigned (remove in production)
+  useEffect(() => {
+    // eslint-disable-next-line no-console
+    console.log("Instructors images:", {
+      kremena: team[0]?.img,
+      petar: team[1]?.img,
+    });
+  }, []);
 
   return (
     <section
@@ -49,7 +61,8 @@ export default function Instructors() {
                 <img
                   src={member.img}
                   alt={member.name}
-                  className="rounded-[2.5rem] shadow-2xl w-full h-[500px] object-cover"
+                  title={String(member.img)}
+                  className="instructors__img rounded-[2.5rem] shadow-2xl w-full h-[500px] object-cover"
                 />
               </div>
 
