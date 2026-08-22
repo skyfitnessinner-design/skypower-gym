@@ -15,7 +15,10 @@ async function run() {
 
   for (const s of sizes) {
     const out = path.join(publicDir, `favicon-${s}.png`);
-    await sharp(src).resize(s, s, { fit: "cover" }).png().toFile(out);
+    await sharp(src)
+      .resize(s, s, { fit: "contain", background: "#ffffff" })
+      .png()
+      .toFile(out);
     console.log("wrote", out);
   }
 
