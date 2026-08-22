@@ -8,6 +8,7 @@ import gymImage5 from "../assets/slider/IMG_0099.jpeg";
 import gymImage6 from "../assets/slider/IMG_0100.jpeg";
 import gymImage7 from "../assets/slider/IMG_0105.jpeg";
 import gymImage8 from "../assets/slider/IMG_0106.jpeg";
+import gymImage9 from "../assets/slider/IMG_0114.jpeg";
 
 // Pricing & Services
 export const PRICING_DATA = {
@@ -126,6 +127,27 @@ export const GALLERY_IMAGES = [
     colSpan: "",
     rowSpan: "",
   },
+  {
+    id: "gym-9",
+    src: gymImage9,
+    alt: "Gym Interior 9",
+    colSpan: "",
+    rowSpan: "",
+  },
+  {
+    id: "gym-10",
+    src: heroImg,
+    alt: "Gym Interior 10",
+    colSpan: "",
+    rowSpan: "",
+  },
+  {
+    id: "gym-11",
+    src: aboutImg,
+    alt: "Gym Interior 11",
+    colSpan: "",
+    rowSpan: "",
+  },
 ] as const;
 
 export const HERO_IMAGE = {
@@ -142,7 +164,7 @@ export const ABOUT_IMAGE = {
 export const COMPANY_INFO = {
   name: "SkyPower",
   fullName: "SkyPower Fitness Centre",
-  phone: "+359 899 448 300",
+  phone: "0888496604",
   email: "info@skypower.bg",
   location: {
     name: 'ТЦ "ЯВОР", ж.к. Младост 1, ет. 3',

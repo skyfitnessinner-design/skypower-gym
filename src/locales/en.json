@@ -21,8 +21,8 @@
     "highlight": "Fitness",
     "description1": "Fitness Sky Power opened its doors in 2009, simultaneously with the opening of Yavor Shopping Center. It is located on the third floor, offering a panoramic view that contributes to the wonderful atmosphere during workouts.",
     "description2": "A distinctive feature of the gym is the glass roof and large windows, which provide natural light and a sense of spaciousness.",
-    "description3": "Our mission is to provide a quality training environment, modern equipment, and a comfortable atmosphere where everyone feels motivated to give their best.",
-    "description4": "For the convenience of visitors, Yavor Shopping Center offers free parking, ensuring easy and convenient access to the gym at all times."
+    "description3": "For the convenience of visitors, Yavor Shopping Center offers free parking, ensuring easy and convenient access to the gym at all times.",
+    "description4": "Our mission is to provide a quality training environment, modern equipment, and a comfortable atmosphere where everyone feels motivated to give their best."
   },
   "zones": {
     "title": "Our Zones",
@@ -84,13 +84,13 @@
     "specialCard": "20 Visits Card for two (1 month)",
     "currency": "BGN.",
     "instructorText": "🏋️‍♂️ Training with Instructor: Single session: 17 € | 33.25 BGN | Monthly + instructor (with 8/12 visits cards): ask at reception.",
-    "multisportText": "✔️ MultiSport: The facility accepts MultiSport cards. Valid for a single visit."
+    "multisportText": "✔️ MultiSport: The facility accepts MultiSport and MultiSport Light cards. Valid for a single visit."
   },
   "contact": {
     "mapLink": "https://maps.app.goo.gl/1CGrXtPSjUmqxNv7A",
     "address": "TRC \"YAVOR\", Mladost 1, fl. 3",
     "city": "Varna, 9020 Bulgaria",
-    "phone": "+359 899 448 300",
+    "phone": "0888496604",
     "email": "info@skypower.bg",
     "workingHours": "Working Hours",
     "hours": [
@@ -123,7 +123,7 @@
     },
     "petar": {
       "name": "Petar Angelov",
-      "desc": "Certified fitness instructor and competitor with over 15 years of experience in the 'Men's Physique' category. He helps clients build strength, muscle mass, and proper training habits.",
+      "desc": "Certified fitness instructor and competitor in the 'Men's Physique' category with over 15 years of experience. He helps clients build strength, muscle mass, and proper training habits.",
       "phone": "Phone: 0884 260 006"
     }
   }

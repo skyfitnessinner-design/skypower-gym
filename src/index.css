@@ -10,24 +10,13 @@
   }
 }
 
-.gallery-swiper-container .swiper-button-next,
-.gallery-swiper-container .swiper-button-prev {
-  color: #2563eb; /* Твоето синьо (text-blue-600) */
+.gallery-swiper .swiper-pagination-bullet {
+  background: rgb(255 255 255 / 65%);
+  opacity: 1;
 }
 
-@media (prefers-color-scheme: dark) {
-  .gallery-swiper-container .swiper-button-next,
-  .gallery-swiper-container .swiper-button-prev {
-    color: #22d3ee; /* Твоят циан (text-cyan-400) */
-  }
-}
-
-.gallery-swiper-container .swiper-pagination-bullet-active {
-  background: #2563eb !important;
-}
-
-.dark .gallery-swiper-container .swiper-pagination-bullet-active {
-  background: #22d3ee !important;
+.gallery-swiper .swiper-pagination-bullet-active {
+  background: #c59d5f;
 }
 
 /* Ensure images show upper part (avoid cutting heads) */
